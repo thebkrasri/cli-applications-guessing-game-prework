@@ -1,6 +1,6 @@
 # Code your solution here!
 def random_num
-  return rand(1..6)
+  return rand(0..5)
 end
 def user_prompt
   puts ""
@@ -9,7 +9,7 @@ def get_input
   return gets.chomp
 end
 def run_guessing_game
-  target = random_num
+  target = random_num +1
   user_prompt
   input = get_input
   if input == target
