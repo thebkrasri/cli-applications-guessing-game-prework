@@ -13,7 +13,7 @@ def run_guessing_game
   user_prompt
   input = get_input
   if input == target
-    puts "You guessed the correct number!"
+    puts "You guessed the correct number!".chomp
   elsif input == "exit"
     puts "Goodbye!"
   else
