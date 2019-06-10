@@ -9,7 +9,7 @@ def get_input
   return gets.chomp
 end
 def run_guessing_game
-  target = random_num +1
+  target = random_num + 1
   user_prompt
   input = get_input
   if input == target
