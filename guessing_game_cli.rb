@@ -5,7 +5,14 @@ end
 def user_prompt
   puts ""
 end
+def get_input
+end
 def run_guessing_game
-  random_num = random_num
-  
+  target = random_num
+  user_prompt
+  guess = get_input
+  if guess == target
+    puts "You guessed the correct number!"
+  else
+    puts 
 end
