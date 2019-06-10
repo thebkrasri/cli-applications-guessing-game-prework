@@ -1,12 +1,12 @@
 # Code your solution here!
 def random_num
-  puts rand(1..6)
+  return rand(1..6)
 end
 def user_prompt
   puts ""
 end
 def get_input
-  get.chomp
+  return gets.chomp
 end
 def run_guessing_game
   target = random_num
