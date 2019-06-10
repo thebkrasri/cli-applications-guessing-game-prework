@@ -3,7 +3,7 @@ def random_num
   return rand(0..5)
 end
 def user_prompt
-  puts ""
+  puts "Pick a number between 1 and 6."
 end
 def get_input
   return gets.chomp
