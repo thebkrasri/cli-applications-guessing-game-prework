@@ -6,13 +6,17 @@ def user_prompt
   puts ""
 end
 def get_input
+  get.chomp
 end
 def run_guessing_game
   target = random_num
   user_prompt
-  guess = get_input
-  if guess == target
+  input = get_input
+  if input == target
     puts "You guessed the correct number!"
+  elsif input == "exit"
+    puts "Goodbye!"
   else
-    puts 
+    puts "Sorry! The computer guessed #{target}."
+  end
 end
