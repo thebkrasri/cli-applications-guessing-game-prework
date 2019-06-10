@@ -13,10 +13,10 @@ def run_guessing_game
   user_prompt
   input = get_input
   if input == target
-    puts "You guessed the correct number!".chomp
+    puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
   else
-    puts "Sorry! The computer guessed #{target}.".chomp
+    puts "Sorry! The computer guessed #{target}."
   end
 end
