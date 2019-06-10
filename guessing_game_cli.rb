@@ -12,7 +12,7 @@ def run_guessing_game
   target = random_num + 1
   user_prompt
   input = get_input
-  if input == target
+  if input == target.to_s
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
